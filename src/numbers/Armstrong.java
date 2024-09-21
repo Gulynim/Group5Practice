@@ -23,6 +23,7 @@ public class Armstrong {
         }else{
             System.out.println("Not armstrong number "+ result);
         }
-
+        System.out.println("Hello from Yuliia");
     }
+
 }
