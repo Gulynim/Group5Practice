@@ -1,0 +1,13 @@
+name: Log Project Card Moves
+
+on:
+project_card:
+types: [moved]
+
+jobs:
+log-move:
+runs-on: ubuntu-latest
+steps:
+- name: Show column name where card was moved
+run: echo "Card moved to:${{github.event.project_card.column_name}}"
+
